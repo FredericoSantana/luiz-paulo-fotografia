@@ -3,10 +3,70 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav {
+    width: 35%;
+    margin: 15px 0px 15px 0;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+}
+header ul li a {
+    text-decoration: none;
+    color: #D95F69;
+    font-family: "Ruda", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: italic;
+}
 main {
     display: grid;
     place-items: center;
 }
+main h1 {
+    color: #ffffff;
+    font-family: "Ruda", Sans-serif;
+    font-size: 29px;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 0.6px;
+}
+.big-title {
+    color: #D95F69;
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 100px;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 0px 0px 2px rgb(0 0 0 / 30%);
+    height: 100px;
+}
+
+#front {
+    box-sizing: border-box;
+    background-image: url("http://luizpaulomoreira.com/wp-content/uploads/2021/03/Arquivo_000.jpeg");
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+#front div {
+    align-self: center;
+    margin-left: 15px;
+}
+
 #items-wrapper {
     width: 70vw;
 }
@@ -27,7 +87,7 @@ main {
     flex: none;
 
     height: 400px;
-    width: 100%;
+    width: 25%;
 
     /* coloca a imagem ao centro */
     scroll-snap-align: start;
