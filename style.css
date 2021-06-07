@@ -125,16 +125,20 @@ aside div img {
     scroll-snap-type: x mandatory;
 
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
 }
 
 .item {
     flex: none;
 
     height: 400px;
-    width: 25%;
+    width: 100%;
 
     /* coloca a imagem ao centro */
     scroll-snap-align: start;
+
+    /* Faz com o ponteiro do mouse não funcione no .item, daí o #items vai funconar na área toda */
+    pointer-events: none;
 }
 
 section img {
