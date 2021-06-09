@@ -30,8 +30,6 @@ header nav ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    position: relative;
-    width: 100%;
 }
 header ul li a {
     text-decoration: none;
@@ -132,6 +130,7 @@ main {
     height: 100vh;
     width: 100vw;
     display: flex;
+    font-family: "Nanum Gothic";
 }
 .parallax aside {
     width: 100vw;
@@ -148,7 +147,7 @@ main {
 .parallax div,
 .parallax-2 div {
     color: #ffffff;
-    height: 150px;
+    height: 200px;
     width: 300px;
     margin: 30px;
 }
@@ -166,6 +165,22 @@ footer a {
 
 .main-footer {
     height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-footer img {
+    height: 50%;
+    width: 50%;
+}
+
+.gallery-footer p {
+    font-size: 1rem;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .bottom-footer {
@@ -178,10 +193,13 @@ footer a {
 
 .bottom-footer p {
     font-family:  "Nanum Gothic";
+    font-size: 0.9rem;
     color: #676767;
+    font-weight: bold;
 }
 
-.bottom-footer span {
+.bottom-footer span,
+.bottom-footer a {
     color: #9d9d9d;
 }
 
