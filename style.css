@@ -7,6 +7,9 @@
 body {
     overflow-x: hidden;
 }
+
+/* =================HEADER================= */
+
 header {
     height: 82vh;
 }
@@ -45,26 +48,12 @@ header ul li a {
     justify-content: center;
     align-items: center;
 }
+
+
+
 main {
     display: grid;
     place-items: center;
-}
-main h1 {
-    color: #ffffff;
-    font-family: "Nanum Gothic", Sans-serif;
-    font-size: 29px;
-    font-weight: 800;
-    font-style: italic;
-    letter-spacing: 0.6px;
-}
-.big-title {
-    color: #a0b0a3;
-    font-family: 'Saira Stencil One', cursive;
-    font-size: 100px;
-    font-weight: 600;
-    font-style: italic;
-    text-shadow: 0px 0px 2px rgb(0 0 0 / 30%);
-    height: 100px;
 }
 
 #front {
@@ -78,23 +67,7 @@ main h1 {
     display: flex;
 }
 
-#front div {
-    align-self: center;
-    margin-left: 15px;
-}
-button {
-    margin-top: 150px;
-}
-
-button a {
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "Nanum Gothic", Sans-serif;
-    font-weight: 500;
-    text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
-    background-color: #a0b0a3;
-    border-radius: 0px 0px 0px 0px;
-}
+/* =================PRIMEIRA DIVISÃO================= */
 
 .transition {
     background-color: #ea7044;
@@ -112,9 +85,9 @@ button a {
 
 .transition h2 {
     color: #FFFFFF;
-    font-family: "Ruda", Sans-serif;
+    font-family: "Saira Stencil One", Sans-serif;
     font-size: 28px;
-    font-weight: 800;
+    font-weight: 600;
     text-transform: uppercase;
     align-self: center;
 }
@@ -130,27 +103,35 @@ button a {
 
 .parallax {
     background-image: url("http://luizpaulomoreira.com/wp-content/uploads/2021/03/LPM_7050.jpg");
-    background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     width: 100vw;
-    display: flex;
-    
-
+    display: flex; */
 }
+
 .parallax-2 {
     background-image: url("http://luizpaulomoreira.com/wp-content/uploads/2021/03/LPM_7343-Editar.jpg");
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex; */
+}
+
+.parallax,
+.parallax-2 {
     background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     width: 100vw;
     display: flex;
-    
-
 }
 .parallax aside {
     width: 100vw;
@@ -172,12 +153,35 @@ height: 100vh;
     margin: 30px;
 }
 
+/* =================FOOTER================= */
+
 footer {
     height: 60vh;
     background-color: #171717;
 }
 
-footer a img {
-    height: 40px;
-    width: 40px;
+footer a {
+    text-decoration: none;
 }
+
+.main-footer {
+    height: 80%;
+}
+
+.bottom-footer {
+    height: 20%;
+    border-top: 1px solid #676767;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.bottom-footer p {
+    font-family:  "Nanum Gothic";
+    color: #676767;
+}
+
+.bottom-footer span {
+    color: #9d9d9d;
+}
+
