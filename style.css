@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+header {
+    height: 70vh;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -58,6 +64,7 @@ main h1 {
     background-image: url("http://luizpaulomoreira.com/wp-content/uploads/2021/03/Arquivo_000.jpeg");
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -81,7 +88,7 @@ button a {
     border-radius: 0px 0px 0px 0px;
 }
 
-aside {
+.transition {
     background-color: #D95F69;
     width: 100vw;
     height: 88px;
@@ -89,13 +96,13 @@ aside {
     justify-content: center;
 }
 
-aside div {
+.transition div {
     width: 40%;
     display: flex;
     align-content: center;
 }
 
-aside h2 {
+.transition h2 {
     color: #FFFFFF;
     font-family: "Ruda", Sans-serif;
     font-size: 28px;
@@ -104,12 +111,14 @@ aside h2 {
     align-self: center;
 }
 
-aside div img {
+.transition div img {
     height: 50px;
     width: 50px;
     align-self: center;
     margin-left: 70px;
 }
+
+/* ================CAROUSEL================ */
 
 #items-wrapper {
     width: 70vw;
@@ -131,7 +140,7 @@ aside div img {
 .item {
     flex: none;
 
-    height: 400px;
+    height: 1000px;
     width: 100%;
 
     /* coloca a imagem ao centro */
@@ -146,6 +155,54 @@ section img {
     height: 100%;
 
     object-fit: cover;
+}
+
+
+/* PARALLAX */
+
+.parallax {
+    background-image: url("http://luizpaulomoreira.com/wp-content/uploads/2021/03/LPM_7050.jpg");
+    background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+    width: 100vw;
+    display: flex;
+    
+
+}
+.parallax-2 {
+    background-image: url("http://luizpaulomoreira.com/wp-content/uploads/2021/03/LPM_7343-Editar.jpg");
+    background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+    width: 100vw;
+    display: flex;
+    
+
+}
+.parallax aside {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+}
+
+.parallax div,
+.parallax-2 div {
+    color: #ffffff;
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    
+    
+}
+
+footer {
+    height: 60vh;
 }
 
 footer a img {
