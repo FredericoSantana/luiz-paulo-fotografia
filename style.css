@@ -47,6 +47,11 @@ header ul li a {
     align-items: center;
 }
 
+.header-logo img {
+    height: 300px;
+    width: 400px;
+}
+
 /* =================MAIN================= */
 
 main {
@@ -128,6 +133,29 @@ main {
     font-size: 14px;
 }
 
+button {
+    margin-top: 25px;
+    background-color: #171717;
+    height: 35px;
+    width: 80px;
+    border: 0;
+    cursor: pointer;
+}
+button a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+button:hover {
+    background-color: #373737;
+}
+
 /* =================FOOTER================= */
 
 footer {
@@ -139,28 +167,49 @@ footer a {
     text-decoration: none;
 }
 
-.main-footer {
-    height: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.logo-footer img {
-    height: 50%;
-    width: 50%;
-}
-
-.gallery-footer h3 {
-    font-size: 0.9rem;
+footer h3 {
+    font-size: 1rem;
     color: #676767;
 }
 
+.main-footer {
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.logo-footer img {
+    height: 70%;
+    width: 70%;
+}
+
+.sm-footer div {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60%;
+}
+
+.sm-footer img {
+    height: 25px;
+    width: 25px;
+}
+
+.info-footer {
+    display: grid;
+}
+
+.ls-footer,
+.info-footer,
+.gallery-footer {
+    padding: 50px;
+}
+
+.info-footer p,
 .gallery-footer p {
-    font-size: 1rem;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     color: #ffffff;
 }
 
@@ -184,4 +233,3 @@ footer a {
     color: #9d9d9d;
     font-weight: 900;
 }
-
