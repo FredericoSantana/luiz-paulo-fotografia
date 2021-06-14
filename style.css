@@ -21,7 +21,7 @@ header {
 
 .header nav {
     display: grid;
-    width: 30%;
+    width: 40%;
     margin: 15px 0px 15px 0;
 }
 header nav ul {
@@ -60,37 +60,83 @@ main {
 }
 
 #front {
-    background-image: url("http://luizpaulomoreira.com/wp-content/uploads/2021/03/Arquivo_000.jpeg");
+    /* background-image: url("http://luizpaulomoreira.com/wp-content/uploads/2021/03/Arquivo_000.jpeg"); */
+    background-image: url("img/futurista.jpg");
 }
-
-.transition {
-    background-color: #ea7044;
+.over-1 {
+    background-color: #2E3F59;
+    height: 100vh;
     width: 100vw;
-    height: 88px;
-    display: flex;
+    display: grid;
     justify-content: center;
+    align-items: center;
+    z-index: 0;
 }
 
-.transition div {
-    width: 40%;
-    display: flex;
-    align-content: center;
+.total {
+    height: 60vh;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50%;
+    grid-template-areas: "t  t"
+                         "l  r";
+    grid-gap: 8px;
 }
 
-.transition h2 {
-    color: #676767;
-    font-family: "Saira Stencil One", Sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    text-transform: uppercase;
-    align-self: center;
+.one {
+    background-image: url("https://images.unsplash.com/photo-1554140676-629e1480c7b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area:t;
+}
+.two {
+    background-image: url("https://images.unsplash.com/photo-1615332327357-ce22631750a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: l;
+}
+.three {
+    background-image: url("https://images.unsplash.com/photo-1569124589354-615739ae007b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: r;
 }
 
-.transition div img {
-    height: 50px;
-    width: 50px;
-    align-self: center;
-    margin-left: 70px;
+.one, .two, .three {
+    padding: 10px;
+}
+
+.up {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    justify-content: right;
+    align-content: end;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.over-2 {
+    background-image: url("https://images.unsplash.com/photo-1457342813143-a1ae27448a82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.over-2 {
+
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    justify-content: right;
+    align-content: end;
 }
 
 .parallax {
@@ -98,7 +144,7 @@ main {
 }
 
 .parallax-2 {
-    background-image: url("http://luizpaulomoreira.com/wp-content/uploads/2021/03/LPM_7343-Editar.jpg");    
+    background-image: url("img/casamento.jpg");
 }
 
 #front,
@@ -118,8 +164,16 @@ main {
 
 #front div,
 .parallax div,
-.parallax-2 div {
+.parallax-2 div,
+.text {
     color: #ffffff;
+    height: 200px;
+    width: 300px;
+    margin: 30px;
+    text-align: right;
+}
+.over-2 div {
+    color: black;
     height: 200px;
     width: 300px;
     margin: 30px;
@@ -128,8 +182,14 @@ main {
 
 #front p,
 .parallax p,
-.parallax-2 p {
+.parallax-2 p,
+.text p {
     font-weight: 200;
+    font-size: 14px;
+}
+
+.over-2 p {
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -176,7 +236,7 @@ footer h3 {
     height: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 150px;
+    margin-left: 10%;
 }
 
 .ls-footer {
