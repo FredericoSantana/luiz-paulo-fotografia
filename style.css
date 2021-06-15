@@ -74,8 +74,8 @@ main {
 }
 
 .total {
-    height: 60vh;
-    width: 70vw;
+    height: 70vh;
+    width: 75vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50%;

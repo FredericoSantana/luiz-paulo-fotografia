@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+    header {
+        height: 50vh;
+    }
+    
+    .header nav {
+        width: 50%;
+    }
+
+    .header-logo img {
+        height: 250px;
+        width: 350px;
+    }
+
+    .total {
+        width: 90vw;
+    }
+
+    .main-footer {
+        margin: 0;
+    }
+
+    .sm div {
+        padding: 0;
+    }
+
+    .info-footer p,
+    .gallery-footer p {
+    font-size: 12px;
+    }
+
+    .bottom-footer p {
+        font-size: 0.8rem;
+    }
+}
