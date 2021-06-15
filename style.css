@@ -60,17 +60,20 @@ main {
 }
 
 #front {
-    /* background-image: url("http://luizpaulomoreira.com/wp-content/uploads/2021/03/Arquivo_000.jpeg"); */
     background-image: url("img/futurista.jpg");
 }
+
+/* PARTE SOBREPOSTA */
 .over-1 {
-    background-color: #2E3F59;
+    /* background-color: #2E3F59; */
+    background-image: linear-gradient(#171717, #1a2134, #2e3f59);
 }
 .over-2 {
-    background-color: #458a9a;
+    /* background-color: #458a9a; */
+    background-image: linear-gradient(#346876, #458a9a, #64b2c8);
 }
 .over-1,
-.over-2 {    
+.over-2 {
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -147,29 +150,14 @@ main {
 
 }
 
-/* .over-2 {
-    background-image: url("https://images.unsplash.com/photo-1457342813143-a1ae27448a82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.over-2 {
-
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    justify-content: right;
-    align-content: end;
-} */
+/* PARTE PARALLAX */
 
 .parallax {
-    background-image: url("http://luizpaulomoreira.com/wp-content/uploads/2021/03/LPM_7050.jpg");
+    background-image: url("img/pre-wedding.jpg");
 }
 
 .parallax-2 {
-    background-image: url("img/casamento.jpg");
+    background-image: url("img/casamento-2.jpg");
 }
 
 #front,
@@ -197,13 +185,6 @@ main {
     margin: 30px;
     text-align: right;
 }
-/* .over-2 div {
-    color: black;
-    height: 200px;
-    width: 300px;
-    margin: 30px;
-    text-align: right;
-} */
 
 #front p,
 .parallax p,
@@ -213,10 +194,7 @@ main {
     font-size: 14px;
 }
 
-/* .over-2 p {
-    font-weight: 400;
-    font-size: 14px;
-} */
+/* BOTÃO GALERIA */
 
 button {
     margin-top: 25px;
