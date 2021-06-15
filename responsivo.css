@@ -2,14 +2,19 @@
     header {
         height: 50vh;
     }
-    
-    .header nav {
-        width: 50%;
+
+    .header nav,
+    .header a {
+        display: none;
     }
+    
+    /* .header nav {
+        width: 50%;
+    } */
 
     .header-logo img {
-        height: 250px;
-        width: 350px;
+        height: 200px;
+        width: 300px;
     }
 
     .total {
@@ -31,5 +36,34 @@
 
     .bottom-footer p {
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 425px) {
+    footer {
+        height: auto;
+    }
+.main-footer {
+    grid-template-columns: none;
+}
+
+    #front div,
+    .parallax div,
+    .parallax-2 div,
+    .text {
+        height: 100px;
+        width: 250px;
+    }
+    section p,
+    section br {
+        display: none;
+    }
+
+    .ls-footer, .info-footer, .gallery-footer {
+        padding: 10px 0 10px 0;
+    }
+
+    .bottom-footer {
+        height: 70px;
     }
 }

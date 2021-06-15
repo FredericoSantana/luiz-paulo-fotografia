@@ -54,10 +54,10 @@ header ul li a {
 
 /* =================MAIN================= */
 
-main {
+/* main {
     display: grid;
     place-items: center;
-}
+} */
 
 #front {
     background-image: url("img/futurista.jpg");
@@ -261,10 +261,11 @@ footer h3 {
     width: 100%;
 }
 
-.sm div {
-    display: flex;
+.sm div a {
+    /* display: flex;
     justify-content: space-between;
-    padding-right: 30%;
+    padding-right: 30%; */
+    padding-right: 7%;
 }
 
 .sm img {
