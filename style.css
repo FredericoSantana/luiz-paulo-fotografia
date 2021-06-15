@@ -65,6 +65,12 @@ main {
 }
 .over-1 {
     background-color: #2E3F59;
+}
+.over-2 {
+    background-color: #458a9a;
+}
+.over-1,
+.over-2 {    
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -79,31 +85,50 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50%;
+    
+}
+
+.over-1 .total {
     grid-template-areas: "t  t"
                          "l  r";
     grid-gap: 8px;
 }
 
-.one {
-    background-image: url("https://images.unsplash.com/photo-1554140676-629e1480c7b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+.over-2 .total {
+    grid-template-areas: "t  r"
+                         "l  r";
+    grid-gap: 8px;
+}
+
+.one, .two, .three {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.over-1 .one {
+    background-image: url("https://images.unsplash.com/photo-1554140676-629e1480c7b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
     grid-area:t;
 }
-.two {
+.over-1 .two {
     background-image: url("https://images.unsplash.com/photo-1615332327357-ce22631750a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     grid-area: l;
 }
-.three {
+.over-1 .three {
     background-image: url("https://images.unsplash.com/photo-1569124589354-615739ae007b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     grid-area: r;
+}
+.over-2 .one {
+    background-image: url("https://images.unsplash.com/flagged/photo-1551457457-699ff7c5d5f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80");
+    grid-area:r;
+}
+.over-2 .two {
+    background-image: url("https://images.unsplash.com/photo-1586688406974-932bae2ec688?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+    grid-area: t;
+}
+.over-2 .three {
+    background-image: url("https://images.unsplash.com/photo-1495345771350-5f3374c052f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80");
+    grid-area: l;
 }
 
 .one, .two, .three {
@@ -122,7 +147,7 @@ main {
 
 }
 
-.over-2 {
+/* .over-2 {
     background-image: url("https://images.unsplash.com/photo-1457342813143-a1ae27448a82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80");
     background-position: center;
     background-repeat: no-repeat;
@@ -137,7 +162,7 @@ main {
     display: grid;
     justify-content: right;
     align-content: end;
-}
+} */
 
 .parallax {
     background-image: url("http://luizpaulomoreira.com/wp-content/uploads/2021/03/LPM_7050.jpg");
@@ -172,13 +197,13 @@ main {
     margin: 30px;
     text-align: right;
 }
-.over-2 div {
+/* .over-2 div {
     color: black;
     height: 200px;
     width: 300px;
     margin: 30px;
     text-align: right;
-}
+} */
 
 #front p,
 .parallax p,
@@ -188,10 +213,10 @@ main {
     font-size: 14px;
 }
 
-.over-2 p {
+/* .over-2 p {
     font-weight: 400;
     font-size: 14px;
-}
+} */
 
 button {
     margin-top: 25px;
