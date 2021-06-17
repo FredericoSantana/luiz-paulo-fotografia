@@ -63,6 +63,40 @@
         text-align: center;
         padding: 0 15% 0 15%;
     }
+
+    /* ===================MENU TOGGLE=================== */
+    .one, .two, .three {
+        background-color: #333333;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+    }
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    /* FULLSCREEN */
+    .header.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ffffff;
+        z-index: 10;
+    }
+
+    .header.on nav {
+        display: block;
+    }
+
+    .on .menu-toggle {
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
 }
 
 @media (max-width: 425px) {
