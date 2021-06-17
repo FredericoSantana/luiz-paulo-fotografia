@@ -3,14 +3,14 @@
         height: 50vh;
     }
 
-    .header nav,
+    /* .header nav,
     .header a {
         display: none;
-    }
-    
-    /* .header nav {
-        width: 50%;
     } */
+    
+    .header nav {
+        width: 50%;
+    }
 
     .header-logo img {
         height: 200px;
@@ -40,6 +40,11 @@
 }
 
 @media (max-width: 425px) {
+    .header nav,
+    .header a {
+        display: none;
+    }
+
     #front, .parallax, .parallax-2 {
         background-attachment: unset;
     }
