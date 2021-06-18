@@ -89,8 +89,6 @@
     .menu-toggle {
         width: 30px;
         height: 30px;
-        /* display: grid;
-        align-items: center; */
         margin-top: 5px;
     }
 
@@ -122,9 +120,9 @@
 
 /* Configuração do menu horizontal para vertical */
     .on nav ul {
-        /* text-align: center; */
         display: block;
         margin-top: 110px;
+        border-bottom: 1px solid #9d9d9d;
     }
 
     .on nav ul li {

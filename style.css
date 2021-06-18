@@ -19,6 +19,7 @@ header {
     justify-content: space-between;
 }
 
+/* MENU */
 .header nav {
     display: grid;
     width: 40%;
@@ -40,6 +41,30 @@ header ul li a {
     text-transform: uppercase;
 }
 
+/* Menu Dropdown */
+
+nav ul ul {
+    display: grid;
+    background-color: #373737;
+    height: auto;    
+}
+
+nav ul ul li a {
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+nav ul ul li a:hover {
+    background-color: #171717;
+}
+
+/* Sub-menu */
+nav ul ul {
+    display: none;
+}
+
+/* LOGO */
 .header-logo {
     height: 75%;
     display: grid;
