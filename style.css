@@ -22,23 +22,23 @@ header {
 /* MENU */
 .header nav {
     display: grid;
-    width: 40%;
-    margin: 15px 0px 15px 0;
+    width: 35%;
+    /* margin: 15px 0px 15px 0; */
 }
 header nav ul {
     display: flex;
     list-style: none;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
     justify-content: space-evenly;
 }
+
 header ul li a {
     text-decoration: none;
     color: #676767;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    text-transform: uppercase;
 }
 
 /* Menu Dropdown */
@@ -46,22 +46,36 @@ header ul li a {
 nav ul ul {
     display: grid;
     background-color: #373737;
-    height: auto;    
+    height: auto;
+    margin-top: 15px;
+}
+
+nav ul ul li {
+    border-bottom: 1px solid #9d9d9d;
+}
+
+nav ul ul li:last-child {
+    border-bottom: none;
 }
 
 nav ul ul li a {
     padding: 10px;
     font-size: 0.8rem;
     color: #ffffff;
+    display: block;
 }
 
-nav ul ul li a:hover {
+nav ul ul li:hover {
     background-color: #171717;
 }
 
 /* Sub-menu */
 nav ul ul {
     display: none;
+    position: absolute;
+}
+nav ul li:hover ul {
+    display: block;
 }
 
 /* LOGO */
